@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+			crossorigin="anonymous"
+    ></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+      <br>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">New York</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Seattle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">London</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Current Weather</a>
+          </li>
+        </ul>
+        <br>
+        <form class="row g-3 search-form">
+           <div class="col-auto">
+          <input
+            type="text"
+            placeholder="Enter city"
+            class="form-control cityname"
+          />
+          </div>
+          <div class="col-auto">
+          <input type="submit" value="SEARCH" class="btn btn-primary" /></div>
+        </form>
+        <br>
+      
+        <div class="row">
+    <div class="col-sm-8 fw-bold city-label">New York</div>
+    <div class="col-sm-8 current_temp"><strong id = "temperature"></strong><span class="units_weather">°C | <a href="#" id="fahrenheit">°F</a></span></div>
+    <div class="col-sm-8 div-class-d date_time">Wednesday 20:00</div>
+    <div class="col-sm-8"><img id = "icon_image" src="https://openweathermap.org/img/wn/04d@2x.png" alt="Weather" class="float-left"></div>
+    <div class="col-sm-8 fw-bold cloud_weather">Clouds</div>
+  </div>
+  <br>
+  <div class="row">
+    <ul>
+      <li>Humidity: <span id="humidity">20</span>%</li>
+      <li>Wind: <span id="wind">30</span>km/h</li>
+    </ul>
+  </div>
+  <br>
+        </div>
+      </div>
+	<p>Open-source code by <u>Mary Demkovska</u></p>
+    <script src="index.js"></script>
+  </body>
+</html>
